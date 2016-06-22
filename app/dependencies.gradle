@@ -1,0 +1,39 @@
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile supportDependencies.appCompatv7
+    compile supportDependencies.supportv4
+    compile supportDependencies.cardView
+    compile supportDependencies.recyclerView
+    compile supportDependencies.design
+    compile playServices.location
+    compile playServices.auth
+    compile libraries.retrofit
+    compile libraries.gson
+    compile libraries.okhttp
+    compile libraries.eventbus
+    compile libraries.dagger
+    compile libraries.rxjava
+    compile libraries.rxandroid
+    compile libraries.okhttpInterceptor
+    compile libraries.retrofitRxJavaAdapter
+    compile libraries.retrofitGsonConverter
+    compile libraries.butterKnife
+
+    apt libraries.daggerCompiler
+    apt libraries.butterKnifeCompiler
+    provided libraries.javaxAnnotation
+
+    testCompile testLibraries.junit
+    testCompile testLibraries.mockitoCore
+
+    androidTestCompile testLibraries.junit
+    androidTestCompile testLibraries.mockitoCore
+    androidTestCompile testLibraries.dexMakerMockito
+    androidTestCompile testLibraries.mockWebServer
+    androidTestCompile testLibraries.supportAnnotations
+    androidTestCompile testLibraries.supportTestRules
+    androidTestCompile testLibraries.supportTestRunner
+    androidTestCompile testLibraries.espressoCore
+    androidTestCompile testLibraries.espressoIntents
+}
